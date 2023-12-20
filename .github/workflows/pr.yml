@@ -27,9 +27,6 @@ jobs:
       - name: Run pre-commit
         run: pre-commit run --all-files
 
-      - name: Run terraform fmt
-        run: terraform fmt -check=true -write=false -diff=true
-
       - name: Check for Label
         run: |
           LABEL_NAME="your-label-name"
