@@ -42,4 +42,4 @@ To get started with this repository, follow these steps:
 ## TEST TEST
 
 Status of Last Deployment:<br>
-<img src-“https://github.com/theAngriestman/devops-ninja./workflows/pr/badge.svg?branch-main”><br>
+[![PR Checks](https://github.com/theAngriestman/devops-ninja/actions/workflows/pr.yml/badge.svg?branch=main)](https://github.com/theAngriestman/devops-ninja/actions/workflows/pr.yml)<br>
