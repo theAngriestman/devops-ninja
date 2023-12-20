@@ -19,10 +19,9 @@ jobs:
         with:
           python-version: 3.8
 
-      - name: Install pre-commit and Terraform
+      - name: Install pre-commit
         run: |
           pip install pre-commit
-          sudo apt-get install terraform
 
       - name: Run pre-commit
         run: pre-commit run --all-files
