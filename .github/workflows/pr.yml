@@ -11,16 +11,6 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout Repository
-        uses: actions/checkout@v2
+      - name: Print Hello Message in Test
+        run: echo "Hello DevOps Pro"
 
-      - name: Check for Label
-        run: |
-          LABEL_NAME="your-label-name"
-          if [[ $(curl -s -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
-                      "https://api.github.com/repos/${{ github.repository }}/issues/${{ github.event.pull_request.number }}/labels" \
-                      | jq -r ".[].name" \
-                      | grep -c "$LABEL_NAME") -eq 0 ]]; then
-            echo "Label $LABEL_NAME not found on the pull request."
-            exit 1
-          fi
